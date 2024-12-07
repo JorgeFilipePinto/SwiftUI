@@ -11,13 +11,13 @@ struct BottomTextView: View {
 
     var body: some View {
         HStack {
-            Spaccer()
+            Spacer()
             Text(str)
-                .body(.body)
+                .font(.body)
                 .bold()
                 .padding()
-            Spaccer()
-        }.background(ColorApp.accent)
+            Spacer()
+        }.background(.white)
     }
 }
 

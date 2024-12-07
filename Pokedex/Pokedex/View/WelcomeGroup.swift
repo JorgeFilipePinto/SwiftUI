@@ -13,16 +13,17 @@ struct WelcomeView: View {
             ZStack {
                 ColorApp.red.ignoresSafeArea()
                 VStack {
-                    Spaccer()
-                    VStack(allignment: .center, spacing: 0) { // Centrado e com espaçamento 0 para dar a parecer que está tudo muito bem unido
+                    Spacer()
+                    VStack(alignment: .center, spacing: 0) { // Centrado e com espaçamento 0 para dar a parecer que está tudo muito bem unido
                         Text("Pokemon, We gotta catch 'em all")
                             .font(.largeTitle)
+                            .foregroundColor(.yellow)
                             .bold()
                             .padding()
                             .multilineTextAlignment(.center)
                     }
-                    Spaccer()
-                    Spaccer()
+                    Spacer()
+                    Spacer()
                     NavigationLink(
                         destination: PokemonView(),
                         label: {
@@ -30,7 +31,7 @@ struct WelcomeView: View {
                                 BottomTextView(str: "Ok, Let's go to catch 'em all")   
                             }
                         })
-                }.foregroundColor(.white)
+                }.foregroundColor(.black)
             }
         }
     }

@@ -4,7 +4,7 @@
 //
 // Created by Jorge Pinto on 07/12/2024
 //
-import Foudantion
+import Foundation
 
 struct Pokemon: Hashable {
     let pokemonText: String
@@ -13,7 +13,8 @@ struct Pokemon: Hashable {
 
     static var allPokemons = [
         Pokemon(pokemonText: "Pickachu",
-                pokemonType: ["Eletric"]),
+                pokemonType: ["Eletric"],
+                pokemonImage: "Image"),
         Pokemon(pokemonText: "Squirtle",
                 pokemonType: ["Water"],
                 pokemonImage: "Image"),
